@@ -12,6 +12,13 @@ This template comes with the following features:
 
 ## npm scripts
 
+## nvm usage
+Run the following command to run the required nodejs version
+`nvm use 22.12.0`
+
+Then verify the correct nodejs version is used running,
+`node -v`
+
 ## Build and dev scripts
 
 - `dev` – start development server
