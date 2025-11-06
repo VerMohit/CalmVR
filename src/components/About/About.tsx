@@ -8,10 +8,6 @@ export function About() {
       <Flex className={classes.flexCont}>
         <img className={classes.image} src="/static/img_About.jpg" />
 
-        {/* <Text>
-                    Tackling Mental health and depression by using VR tech by engagin users in virtual enviorn giving them therapeutic affects. Studeis have shown nature and soothing sounds have a positive affect on the mind. Since user better able to interact with virtual enviornment, there will be a positive impact helping them rehabiltate and mental issues.                    
-                </Text> */}
-
         <Box>
           <Text className={classes.text}>
             Mental health issues are a real concern for Canadians, which has roughly{' '}
