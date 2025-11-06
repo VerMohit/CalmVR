@@ -19,57 +19,17 @@ export function HomePage() {
         <Heading />
       </Box>
 
-      <CustomPage
-        idLabel={'About'}
-        heading={'About'}
-        children={
-          <Text>
-            <About />
-          </Text>
-        }
-      />
+      <CustomPage idLabel={'About'} heading={'About'} children={<About />} />
 
-      <CustomPage
-        idLabel={'Facts'}
-        heading={''}
-        children={
-          <Text>
-            <Facts />
-          </Text>
-        }
-      />
+      <CustomPage idLabel={'Facts'} heading={''} children={<Facts />} />
 
       <Box style={{ background: '#F8F9FA' }}>
-        <CustomPage
-          idLabel={'How_It_Works'}
-          heading={'How It Works'}
-          children={
-            <Text>
-              <Use />
-            </Text>
-          }
-        />
+        <CustomPage idLabel={'How_It_Works'} heading={'How It Works'} children={<Use />} />
 
-        <CustomPage
-          idLabel={'Demo'}
-          heading={'Demo'}
-          children={
-            <Text>
-              <Demo />
-            </Text>
-          }
-        />
+        <CustomPage idLabel={'Demo'} heading={'Demo'} children={<Demo />} />
       </Box>
 
-      <CustomPage
-        idLabel={'Reviews'}
-        heading={'Reviews'}
-        children={
-          <Text>
-            <Review />
-          </Text>
-        }
-      />
+      <CustomPage idLabel={'Reviews'} heading={'Reviews'} children={<Review />} />
 
       <Footer />
     </>
