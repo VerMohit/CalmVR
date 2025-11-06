@@ -1,0 +1,11 @@
+.carousel {
+    height: auto;
+    width: calc(100% - 2px);
+}
+
+.carSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
