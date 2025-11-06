@@ -1,3 +1,16 @@
+# Project Description
+**Hackathon Winner for Best Overall Solution** - https://devpost.com/software/calmvr
+
+Inspired to make this VR app after seeing that there were very few apps in VR which were focused on immersion and calmness. Thus, we wanted to create something which would bring the incredible immersive power of VR in the domain of mental health and wellness.
+
+Provides a 360° view of calm nature locations around the world with a full immersive visual and auditory experience.
+
+Used the Unity Engine to design the backgrounds and other immersive elements like falling leaves and fireflies. In this we used C# to design the interfaces as well as the transitions and virtual buttons. Along with the SteamVR Library to design other minor elements. We also created a website using React showcasing our app as well the different backgrounds used.
+
+# Reason for development
+During the hackathon, the computer used to create the VR app had crashed and we lost our progress near the last 10 minutes of submission. As a result, I built this frontend application to showcase our idea and a video demonstration.
+
+
 # Mantine Vite template
 
 ## Features
