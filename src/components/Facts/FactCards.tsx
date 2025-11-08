@@ -6,7 +6,7 @@ type Props = {
   description: string;
 };
 
-export function FactsBox({ imgSrc, description }: Props) {
+export function FactCards({ imgSrc, description }: Props) {
   return (
     <Flex className={classes.main}>
       <img src={imgSrc} />
