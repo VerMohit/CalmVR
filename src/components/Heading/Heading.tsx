@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { Container, Group, Burger, Title } from '@mantine/core';
+import React, { useState } from 'react';
+import { Burger, Container, Group, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import * as classes from "./Heading.module.css"
-import React from 'react';
+import * as classes from './Heading.module.css';
 
 const links = [
   { link: '#About', label: 'About' },
@@ -36,14 +35,15 @@ export function Heading() {
   ));
 
   return (
-    <header className={classes.header}>
+    <header className={`${classes.header} ${classes.stickyNav}`}>
       <Container size="md" className={classes.inner}>
-        <Title><span>Calm</span><i>VR</i></Title>
+        <Title>
+          <span>Calm</span>
+          <i>VR</i>
+        </Title>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
-
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
     </header>
   );
