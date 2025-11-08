@@ -1,29 +1,27 @@
-// import { Carousel } from '@mantine/carousel';
-import { Text } from '@mantine/core';
+import { Box, Text } from '@mantine/core';
 
 import '@mantine/carousel/styles.css';
 
-import React from 'react';
 import { CarouselComponent } from '../Carousel/CarouselComponent';
-import { UseBlock } from './UseBlock';
-import * as classes from './Use.module.css';
+import { DescriptionBlock } from './DescriptionBlock';
+import * as classes from './HowItWorks.module.css';
 
 const carouselStyle = {
   borderRadius: '20px', // Adjust the value based on your preference
   overflow: 'hidden', // Ensure that content within the carousel doesn't overflow
 };
 
-export function Use() {
+export function HowItWorks() {
   return (
-    <>
-      <UseBlock
+    <Box>
+      <DescriptionBlock
         imgSrc="/static/Peter.png"
         description="Find your favourite spot at home, grab the VR headset and immerse yourself into a calming
           and meditative journey through several scenes that enlighten you."
         placeBefore={true}
       />
 
-      <UseBlock
+      <DescriptionBlock
         imgSrc="/static/Talon.png"
         description="You no longer have to wait for therapy or doctors. CalmVR offers an on-demand and
           cost-effective solution that promotes relaxation and a resilient mindset."
@@ -45,6 +43,6 @@ export function Use() {
           '/static/nature6.png',
         ]}
       />
-    </>
+    </Box>
   );
 }

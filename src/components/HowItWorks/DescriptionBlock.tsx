@@ -1,5 +1,5 @@
 import { Flex, Text } from '@mantine/core';
-import * as classes from './Use.module.css';
+import * as classes from './HowItWorks.module.css';
 
 type Props = {
   imgSrc: string;
@@ -7,7 +7,7 @@ type Props = {
   placeBefore: boolean;
 };
 
-export function UseBlock({ imgSrc, description, placeBefore }: Props) {
+export function DescriptionBlock({ imgSrc, description, placeBefore }: Props) {
   return (
     <Flex className={classes.flexCont}>
       {placeBefore ? (
