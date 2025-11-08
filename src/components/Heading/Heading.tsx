@@ -14,7 +14,7 @@ export function Heading() {
   const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 
-  const items = links.map((link) => (
+  const navLinks = links.map((link) => (
     <a
       key={link.label}
       href={link.link}
@@ -42,7 +42,7 @@ export function Heading() {
           <i>VR</i>
         </Title>
         <Group gap={5} visibleFrom="xs">
-          {items}
+          {navLinks}
         </Group>
       </Container>
     </header>
