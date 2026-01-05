@@ -1,6 +1,6 @@
-import { Anchor, Group, Text, Title, Container } from '@mantine/core';
-import * as classes from './Footer.module.css';
 import React from 'react';
+import { Anchor, Container, Group, Text, Title } from '@mantine/core';
+import * as classes from './Footer.module.css';
 
 const links = [
   { link: '#', label: 'Contact' },
@@ -24,12 +24,14 @@ export function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Title><span>Calm</span><i>VR</i></Title>
+        <Title>
+          <span>Calm</span>
+          <i>VR</i>
+        </Title>
 
         <Text>© 2024</Text>
 
         <Group className={classes.links}>{items}</Group>
-
       </Container>
     </div>
   );

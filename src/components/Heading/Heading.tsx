@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Burger, Container, Group, Title } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { useState } from 'react';
+import { Container, Group, Title } from '@mantine/core';
 import * as classes from './Heading.module.css';
 
 const links = [
@@ -11,7 +10,6 @@ const links = [
 ];
 
 export function Heading() {
-  const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 
   const navLinks = links.map((link) => (

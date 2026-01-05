@@ -1,11 +1,10 @@
-import React from 'react';
-import { AspectRatio, Box, Flex, Image, Text } from '@mantine/core';
+import { Box, Flex, Text } from '@mantine/core';
 import * as classes from './About.module.css';
 
 export function About() {
   return (
     <Flex className={classes.flexCont}>
-      <img className={classes.image} src="/static/img_About.jpg" />
+      <img className={classes.image} src="/static/img_About.jpg" alt="mental-health" />
 
       <Box>
         <Text className={classes.text}>
@@ -13,7 +12,7 @@ export function About() {
           <span>doubled</span> beween 2020 to 2023 (Statistics Canada).
         </Text>
 
-        <Text py={'20px'} className={classes.text}>
+        <Text py="20px" className={classes.text}>
           CalmVR's mission is to help Canadians overcome mental health struggles using virtual
           reality. Our solution brings <span>you</span> to a <span>calm</span> and{' '}
           <span>meditative</span> state by <span>engaging</span> your <span>hearing</span> and{' '}

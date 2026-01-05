@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Flex, Text, Title } from '@mantine/core';
+import { Flex, Text, Title } from '@mantine/core';
 import * as classes from './Welcome.module.css';
 
 export function Welcome() {
