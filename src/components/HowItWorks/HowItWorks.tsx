@@ -6,11 +6,6 @@ import { CarouselComponent } from '../Carousel/CarouselComponent';
 import { DescriptionBlock } from './DescriptionBlock';
 import * as classes from './HowItWorks.module.css';
 
-const carouselStyle = {
-  borderRadius: '20px', // Adjust the value based on your preference
-  overflow: 'hidden', // Ensure that content within the carousel doesn't overflow
-};
-
 export function HowItWorks() {
   return (
     <Box>
@@ -18,7 +13,7 @@ export function HowItWorks() {
         imgSrc="/static/Peter.png"
         description="Find your favourite spot at home, grab the VR headset and immerse yourself into a calming
           and meditative journey through several scenes that enlighten you."
-        placeBefore={true}
+        placeBefore
       />
 
       <DescriptionBlock
