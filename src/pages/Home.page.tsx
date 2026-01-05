@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text } from '@mantine/core';
+import { Box } from '@mantine/core';
 import { About } from '../components/About/About';
 import { CustomPage } from '../components/CusomtPage/CustomPage';
 import { Demo } from '../components/Demo/Demo';
@@ -15,13 +15,23 @@ export function HomePage() {
     <>
       <Welcome />
       <Heading />
-      <CustomPage idLabel={'About'} heading={'About'} children={<About />} />
-      <CustomPage idLabel={'Facts'} heading={''} children={<Facts />} />
+      <CustomPage idLabel="About" heading="About">
+        <About />
+      </CustomPage>
+      <CustomPage idLabel="Facts" heading="">
+        <Facts />
+      </CustomPage>
       <Box style={{ background: '#F8F9FA' }}>
-        <CustomPage idLabel={'How_It_Works'} heading={'How It Works'} children={<HowItWorks />} />
-        <CustomPage idLabel={'Demo'} heading={'Demo'} children={<Demo />} />
+        <CustomPage idLabel="How_It_Works" heading="How It Works">
+          <HowItWorks />
+        </CustomPage>
+        <CustomPage idLabel="Demo" heading="Demo">
+          <Demo />
+        </CustomPage>
       </Box>
-      <CustomPage idLabel={'Reviews'} heading={'Reviews'} children={<Review />} />
+      <CustomPage idLabel="Reviews" heading="Reviews">
+        <Review />
+      </CustomPage>
       <Footer />
     </>
   );
