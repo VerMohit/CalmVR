@@ -1,5 +1,5 @@
 :root {
-  --nav-height: 50px; /* Needed for Welcome.tsx to adjust height of landing page image and navigation*/
+  --nav-height: 50px; /* Needed for Welcome.tsx to adjust height of landing page image and navigation */
 }
 
 .main {

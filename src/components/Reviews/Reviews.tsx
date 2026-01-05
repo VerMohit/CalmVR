@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Center, Flex, Rating, Text } from '@mantine/core';
+import { Flex, Rating, Text } from '@mantine/core';
 import * as classes from './Reviews.module.css';
 
 interface ReviewProp {
@@ -13,7 +13,7 @@ function CreateReview({ image, name, remark, rating }: ReviewProp) {
   return (
     <Flex className={classes.outerFlex}>
       <Flex className={classes.imgFlex}>
-        <img className={classes.imgs} src={image} />
+        <img className={classes.imgs} src={image} alt={name} />
         <Text className={classes.text}>{name}</Text>
       </Flex>
       <Flex className={classes.ratingFlex}>
