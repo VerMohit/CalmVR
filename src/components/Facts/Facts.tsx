@@ -1,5 +1,4 @@
-import React from 'react';
-import { Divider, Flex, Text } from '@mantine/core';
+import { Flex } from '@mantine/core';
 import { FactCards } from './FactCards';
 import * as classes from './Facts.module.css';
 

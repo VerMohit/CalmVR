@@ -9,7 +9,7 @@ type Props = {
 export function FactCards({ imgSrc, description }: Props) {
   return (
     <Flex className={classes.main}>
-      <img src={imgSrc} />
+      <img src={imgSrc} alt={description} />
       <Divider className={classes.divider} />
       <Text className={classes.text}>{description}</Text>
     </Flex>
