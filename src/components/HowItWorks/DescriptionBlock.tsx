@@ -8,19 +8,10 @@ type Props = {
 };
 
 export function DescriptionBlock({ imgSrc, description, placeBefore }: Props) {
-  return (
-    <Flex className={classes.flexCont}>
-      {placeBefore ? (
-        <>
-          <img className={classes.imgPeter} src={imgSrc} />
-          <Text className={classes.text}>{description}</Text>
-        </>
-      ) : (
-        <>
-          <Text className={classes.text}>{description}</Text>
-          <img className={classes.imgPeter} src={imgSrc} />
-        </>
-      )}
-    </Flex>
-  );
+  const image = <img className={classes.imgPeter} src={imgSrc} alt={description} />;
+  const text = <Text className={classes.text}>{description}</Text>;
+
+  const context = placeBefore ? [image, text] : [text, image];
+
+  return <Flex className={classes.flexCont}>{context}</Flex>;
 }
